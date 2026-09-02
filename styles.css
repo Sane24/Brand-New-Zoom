@@ -1,4 +1,3 @@
-/* CS180 Proj 0 · Desk at Dusk */
 :root{
   --cream:#f6f1e3; --ink:#1e2233; --blue:#2b5aa8; --red:#c0392b; --yellow:#ffd76a;
   --cork:#b98a5e; --frame:#7d5537; --hand:'Gaegu',cursive; --display:'Fredoka',sans-serif;
@@ -8,7 +7,7 @@ body{margin:0;font-family:'Atkinson Hyperlegible',sans-serif;color:var(--ink);ba
 a{color:var(--blue)} a:hover{color:var(--red)}
 img{display:block}
 
-/* ---------- sky ---------- */
+/* sky */
 .sky{position:fixed;inset:0;z-index:0;background:linear-gradient(to bottom,#a8d6f5,#ecf0e8)}
 .stars{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:0;animation:twinkle 4s ease-in-out infinite;
   background-image:radial-gradient(1.5px 1.5px at 12% 18%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 30% 40%,#fff 50%,transparent 51%),radial-gradient(2px 2px at 55% 12%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 70% 30%,#fff 50%,transparent 51%),radial-gradient(1.5px 1.5px at 88% 22%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 45% 60%,#fff 50%,transparent 51%),radial-gradient(1.5px 1.5px at 92% 55%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 8% 70%,#fff 50%,transparent 51%),radial-gradient(1.5px 1.5px at 22% 85%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 78% 80%,#fff 50%,transparent 51%)}
@@ -40,8 +39,8 @@ img{display:block}
 .ground{left:0;right:0;bottom:0;height:70px}
 .hills{left:0;right:0;bottom:60px;height:90px;opacity:.75;background:radial-gradient(ellipse 30% 100% at 10% 100%,currentColor 60%,transparent 61%),radial-gradient(ellipse 40% 90% at 45% 100%,currentColor 60%,transparent 61%),radial-gradient(ellipse 35% 100% at 85% 100%,currentColor 60%,transparent 61%)!important}
 .b1{left:4vw;bottom:60px;width:110px;height:64px}
-.windows{background:var(--yellow)!important;opacity:var(--win);-webkit-mask-composite:source-in;mask-composite:intersect}
-.w1{left:4vw;bottom:60px;width:110px;height:64px;-webkit-mask:repeating-linear-gradient(90deg,transparent 0 14px,#000 14px 20px,transparent 20px 28px),repeating-linear-gradient(0deg,transparent 0 10px,#000 10px 18px,transparent 18px 26px);mask:repeating-linear-gradient(90deg,transparent 0 14px,#000 14px 20px,transparent 20px 28px),repeating-linear-gradient(0deg,transparent 0 10px,#000 10px 18px,transparent 18px 26px)}
+.windows{background:var(--yellow)!important;opacity:var(--win)}
+.w1{left:4vw;bottom:60px;width:110px;height:64px;-webkit-mask:repeating-linear-gradient(90deg,transparent 0 14px,#000 14px 20px,transparent 20px 28px),repeating-linear-gradient(0deg,transparent 0 10px,#000 10px 18px,transparent 18px 26px);mask:repeating-linear-gradient(90deg,transparent 0 14px,#000 14px 20px,transparent 20px 28px),repeating-linear-gradient(0deg,transparent 0 10px,#000 10px 18px,transparent 18px 26px);-webkit-mask-composite:source-in;mask-composite:intersect}
 .b2{left:calc(4vw + 130px);bottom:60px;width:22px;height:74px}
 .b3{left:calc(4vw + 158px);bottom:60px;width:70px;height:40px}
 .r3{left:calc(4vw + 158px);bottom:100px;width:70px;height:30px;clip-path:polygon(0 100%,50% 0,100% 100%)}
@@ -51,7 +50,7 @@ img{display:block}
 .camp-clock{right:calc(9vw + 9px);bottom:176px;width:12px;height:12px;border-radius:50%;background:var(--yellow)!important;opacity:var(--win)}
 .camp-window{right:calc(9vw + 7px);bottom:130px;width:16px;height:22px;background:var(--yellow)!important;opacity:var(--win)}
 .b4{right:calc(9vw + 50px);bottom:60px;width:90px;height:52px}
-.w4{right:calc(9vw + 50px);bottom:60px;width:90px;height:52px;-webkit-mask:repeating-linear-gradient(90deg,transparent 0 12px,#000 12px 18px,transparent 18px 26px),repeating-linear-gradient(0deg,transparent 0 10px,#000 10px 18px,transparent 18px 24px);mask:repeating-linear-gradient(90deg,transparent 0 12px,#000 12px 18px,transparent 18px 26px),repeating-linear-gradient(0deg,transparent 0 10px,#000 10px 18px,transparent 18px 24px)}
+.w4{right:calc(9vw + 50px);bottom:60px;width:90px;height:52px;-webkit-mask:repeating-linear-gradient(90deg,transparent 0 12px,#000 12px 18px,transparent 18px 26px),repeating-linear-gradient(0deg,transparent 0 10px,#000 10px 18px,transparent 18px 24px);mask:repeating-linear-gradient(90deg,transparent 0 12px,#000 12px 18px,transparent 18px 26px),repeating-linear-gradient(0deg,transparent 0 10px,#000 10px 18px,transparent 18px 24px);-webkit-mask-composite:source-in;mask-composite:intersect}
 .lamp-glow{position:fixed;z-index:2;left:-120px;bottom:-140px;width:520px;height:520px;pointer-events:none;border-radius:50%;background:radial-gradient(circle,rgba(255,190,90,.55),rgba(255,190,90,0) 65%);opacity:0}
 
 /* ---------- corkboard ---------- */
