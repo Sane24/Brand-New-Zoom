@@ -152,12 +152,14 @@ figure.dolly-print figcaption span{font-size:17px;color:#555}
 
 /* ---------- project links ---------- */
 .proj-nav{position:absolute;top:10px;left:16px;z-index:5;display:flex;gap:18px}
-.cloud-link{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:150px;height:40px;margin-top:14px;padding:4px 18px 0;border-radius:24px;background:#fff;box-shadow:0 3px 8px rgba(0,0,0,.15);font-family:var(--hand);font-size:17px;line-height:1;color:var(--ink);text-decoration:none;white-space:nowrap;animation:bob 4s ease-in-out infinite;transition:transform .2s}
+.cloud-link{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:150px;height:40px;margin-top:14px;padding:4px 18px 0;border-radius:24px;background:var(--cl,#fff);box-shadow:0 3px 8px rgba(0,0,0,.15);font-family:var(--hand);font-size:17px;line-height:1;color:var(--ink);text-decoration:none;white-space:nowrap;animation:bob 4s ease-in-out infinite;transition:transform .2s}
 .cloud-link:nth-child(2){animation-delay:-2s}
-.cloud-link::before,.cloud-link::after{content:"";position:absolute;z-index:-1;background:#fff;border-radius:50%}
+.cloud-link::before,.cloud-link::after{content:"";position:absolute;z-index:-1;background:var(--cl,#fff);border-radius:50%}
 .cloud-link::before{left:22px;top:-14px;width:40px;height:40px}
 .cloud-link::after{left:54px;top:-20px;width:50px;height:50px}
-.cloud-link b{font-family:var(--display);font-size:13px;color:var(--blue);margin-bottom:2px}
+.cloud-link b{font-family:var(--display);font-size:13px;color:var(--clb,var(--blue));margin-bottom:2px}
+.cloud-link.doll{--cl:#ffd2c8;--clb:#b8322a}
+.cloud-link.twilight{--cl:#ddd0f7;--clb:#5b3f9e}
 .cloud-link:hover{color:var(--red);animation-play-state:paused;transform:translateY(-3px) scale(1.05)}
 @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
 
